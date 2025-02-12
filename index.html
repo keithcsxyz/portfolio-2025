@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><span class="logo-initial">K</span>eith</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#socials">Socials</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="close-btn" onclick="toggleMenu()">✖</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#socials">Socials</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="home" id="home">
+        <div id="greeting">
+            <h1 class="greeting">
+                <span class="word">
+                    <span class="letter">H</span>
+                    <span class="letter">i</span>
+                    <span class="letter">,</span>
+                </span>
+                <span class="word">
+                    <span class="letter">&nbsp;</span>
+                    <span class="letter">I</span>
+                    <span class="letter">'</span>
+                    <span class="letter">m</span>
+                </span>
+                <span class="word">
+                    <span class="letter">&nbsp;</span>
+                    <span class="letter">K</span>
+                    <span class="letter">e</span>
+                    <span class="letter">i</span>
+                    <span class="letter">t</span>
+                    <span class="letter">h</span>
+                    <span class="letter">!</span>
+                </span>
+            </h1>
+        </div>
+        <br> <br> <br>
+        <a href="https://buymeacoffee.com/cskeith" class="donate-me-btn" target="_blank">
+            <span>.gae man piso</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </a>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="about-me">About <span class="me">Me</span></h1>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="pics/3X3 ID PIC.jpg" alt="Keith">
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm Keith Renz D. Romblon, a 20-year-old alien from the planet Namec! 🌍👾 Currently studying computer science in my second year, I spend my days decoding the mysteries of the universe (and debugging code). If you ever need help with tech or just want to talk about life on Earth, I'm your guy! 🚀</p>
+            </div>
+        </div>
+        <div class="about-details">
+            <div class="about-section" onclick="toggleSection('skills')">Skills</div>
+            <div id="skills" class="about-info">
+                <p class="sub-info"><span class="year">2023 - Current</span><br><span class="info">may gamay na aram sa Python kag C</span></p>
+                <p class="sub-info"><span class="year">2023 - Current</span><br><span class="info">ga adal medyo HTML kag CSS</span></p>
+            </div>
+            <div class="about-section" onclick="toggleSection('experience')">Experience</div>
+            <div id="experience" class="about-info">
+                <p class="sub-info"><span class="year">2023 - Current</span><br><span class="info">No experience hahaha</span></p>
+            </div>
+            <div class="about-section" onclick="toggleSection('education')">Education</div>
+            <div id="education" class="about-info">
+                <p class="sub-info"><span class="year">2023 - Current</span><br><span class="info">Dr. Emilio B. Espinosa Sr. State College of Agriculture and Technology</span></p>
+                <p class="sub-info"><span class="year">2021 - 2023</span><br><span class="info">Masbate National Comprehensive High School</span></p>
+                <p class="sub-info"><span class="year">2017 - 2021</span><br><span class="info">Uson National High School</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
