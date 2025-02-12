@@ -26,7 +26,7 @@
 .navbar .logo {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 50px; /* Removed negative margin */
+    margin-left: 5px; /* Removed negative margin */
 }
 
 .navbar .logo .logo-initial {
@@ -149,6 +149,15 @@ body.menu-open .mobile-nav {
     z-index: 1002; /* Ensure the close button is above other content */
 }
 
+#greeting .greeting {
+    font-size: 70px;
+    margin: -280px -100px;
+}
+
+#name {
+    color: red;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 1500px) and (max-height: 900px) {
     .nav-links a {
@@ -166,6 +175,43 @@ body.menu-open .mobile-nav {
     .nav-links {
         display: none;
     }
+
+    #greeting .greeting {
+        font-size: 50px;
+        margin: -280px -100px;
+    }
+
+    #name {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    #greeting .greeting {
+        font-size: 30px;
+        margin: -280px -100px;
+    }
+
+    #name {
+        color: red;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -177,18 +223,34 @@ body.menu-open .mobile-nav {
         display: block;
     }
 
-    #greeting  .greeting {
-        font-size: 5px;
-        padding: 0 50px;
-        margin: 0 50px;
+    .navbar .logo {
+        font-size: 18px;
+    }
 
-        font-size: 20px; /* Adjust font size for mobile devices */
-        margin-top: 80px; /* Add margin to avoid overlap with navbar */
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .about h1 {
+        font-size: 25px;
+    }
+
+    .greeting {
+        font-size: 25px;
+    }
+
+    #greeting .greeting {
+        font-size: 30px;
+        margin: -280px -100px;
+    }
+
+    #name {
+        color: red;
     }
 
     .about-me {
-        margin-left: 0;
-        padding-left: 0;
+        margin-left: 0px;
+        padding-left: 0px;
         text-align: center; /* Center the text */
         margin-bottom: 20px; /* Add some space below the text */
     }
@@ -204,6 +266,84 @@ body.menu-open .mobile-nav {
 
     .about-text {
         text-align: center; /* Center align text */
+    }
+
+    #name {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar .logo {
+        font-size: 16px;
+        margin-left: -10px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    #greeting .greeting {
+        font-size: 15px;
+        margin: -280px -100px;
+    }
+
+    #name {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo {
+        font-size: 16px;
+        padding-left: -10px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    #greeting .greeting {
+        font-size: 15px;
+        margin: -300px -100px;
+    }
+
+    #name {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding-left: 20px; /* Add some padding to the left */
+    }
+
+    .about-text {
+        text-align: left; /* Align text to the left */
+    }
+
+    .about-img {
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .about-me {
+        text-align: left; /* Align the "About Me" heading to the left */
+        margin-left: 20px; /* Add some margin to the left */
+    }
+
+    #greeting .greeting {
+        font-size: 15px;
+        margin: -300px -100px;
     }
 }
 
@@ -247,14 +387,6 @@ body {
 .greeting .letter.red {
     color: #f11e0f;
 }
-
-
-
-
-
-
-
-
 
 /* donate button styles */
 .donate-me-btn {
@@ -309,31 +441,6 @@ body {
     transform: scale(0.96);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* About Section Styles */
 .about {
     padding: 100px 20px; /* Add padding to the about section */
@@ -346,7 +453,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin-left: 190px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .about .about-me .me {
@@ -418,4 +525,86 @@ body {
 
 .info {
     font-size: 13px;
+}
+
+/* Styles for iPhone XR */
+@media screen and (max-width: 414px) and (max-height: 896px) {
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding-left: 20px; /* Add some padding to the left */
+    }
+
+    .about-text {
+        text-align: left; /* Align text to the left */
+    }
+
+    .about-img {
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .about-me {
+        text-align: left; /* Align the "About Me" heading to the left */
+        margin-left: 20px; /* Add some margin to the left */
+    }
+}
+
+/* Additional Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .greeting {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .about h1 {
+        font-size: 25px;
+    }
+
+    .greeting {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo {
+        font-size: 16px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    .greeting {
+        font-size: 20px;
+    }
 }
